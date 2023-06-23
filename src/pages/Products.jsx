@@ -1,4 +1,5 @@
 import {ProductList} from "../components/ProductList.jsx";
+import {Pagination} from "../components/Pagination.jsx";
 
 export const Products = () => {
 	/*dummy product list*/
@@ -29,7 +30,7 @@ export const Products = () => {
 				</h1>
 				<ProductList products={products}/>
 				<div className="flex items-center justify-between my-5">
-					<h1>pagination</h1>
+					<Pagination/>
 					<h1>Loading</h1>
 				</div>
 			</div>
