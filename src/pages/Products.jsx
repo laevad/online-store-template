@@ -28,6 +28,10 @@ export const Products = () => {
 					Products
 				</h1>
 				<ProductList products={products}/>
+				<div className="flex items-center justify-between my-5">
+					<h1>pagination</h1>
+					<h1>Loading</h1>
+				</div>
 			</div>
 		</>
 	)
