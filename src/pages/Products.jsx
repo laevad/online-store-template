@@ -27,7 +27,7 @@ export const Products = () => {
 				<h1 className="text-2xl text-center my-5 font-bold underline">
 					Products
 				</h1>
-				<ProductList/>
+				<ProductList products={products}/>
 			</div>
 		</>
 	)
