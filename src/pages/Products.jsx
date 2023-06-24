@@ -2,15 +2,16 @@ import {ProductList} from "../components/ProductList.jsx";
 import {Pagination} from "../components/Pagination.jsx";
 import {LoadingSpinner} from "../components/LoadingSpinner.jsx";
 import {useQuery} from "@tanstack/react-query";
-import {getProductList} from "../services/api.js";
 import {useState} from "react";
+import {getProductList} from "../services/api";
 
 export const Products = () => {
-	const [currentPage, setCurrentPage] = useState(1);
+	const [currentPage] = useState(1);
 	const {data} = useQuery({
 		queryKey: ["products", currentPage],
-		queryFn: getProductList(currentPage),
-	});
+		queryFn: () => getProductList(currentPage),
+	}
+	);
 
 	// eslint-disable-next-line no-unused-vars
 	const products = [
