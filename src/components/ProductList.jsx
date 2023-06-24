@@ -21,7 +21,7 @@ export const ProductList = ({products}) => {
 							<p className="text-sm">{product.description}</p>
 
 						</div>
-						<div className="card-footer mb-3">
+						<div className="card-footer m-3">
 							{/*	view and add to card: spce between*/}
 							<div className="justify-between card-actions">
 								<button className="btn btn-outline btn-sm">
